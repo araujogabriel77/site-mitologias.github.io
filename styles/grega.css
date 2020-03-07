@@ -1,0 +1,116 @@
+.nav-gods {
+    position: fixed;
+    background-color: beige;
+}
+.nav-gods ul {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.nav-gods ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 20%;
+    margin-top: .5em;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: var(--lbg);
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-gods ul li:hover  {
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: beige;
+    border: 1px solid var(--lbg);
+}
+.nav-gods ul li:hover a {
+    color: var(--lbg);
+}
+.nav-gods ul li a {
+    color: beige;
+    font-size: 11pt;
+}
+.content {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    padding: 10px 0;
+}
+.content h1 {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: .2em;
+    height: 80px;
+    border-bottom: 3px solid var(--marrom2);
+    font-size: 22pt;
+    color: var(--lbg);
+}
+.content p {
+    margin-top: 1em;
+    font-size: 13pt;
+    text-align: justify;
+    line-height: 1.5;
+}
+.info-content {
+    background-color: var(--lbg);
+    width: 70%;
+    display: flex;
+    margin: 4.5em auto 0;
+    padding: 10px 15px;
+    position: relative;
+    border-radius: 4px;
+}
+.odd {
+    background-color: beige;
+    border: 2px solid var(--lbg);
+}
+.odd .god-text h3, .odd .god-text p{
+    color: var(--lbg);
+}
+
+.info-content img {
+    width: 140px;
+    height: 140px;
+    filter: drop-shadow(-2px 2px 0px black);
+}
+.info-content .god-text {
+    color: beige;
+    width: 100%;
+}
+.info-content .god-text h3 {
+    font-size: 16pt;
+    margin-top: .5em;
+    text-align: center;
+}
+.info-content .god-text p {
+    margin-top: 1em;
+    text-align: center;
+}
+
+
+@media screen and (max-width:550px) {
+    /* .nav-gods {
+        display: none;
+    } */
+    .info-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .info-content img{
+        height: 150px;
+        width: 150px;
+    }
+    .info-content .god-text {
+        width: 100%;
+    }
+}

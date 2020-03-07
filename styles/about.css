@@ -1,0 +1,44 @@
+.sec1 {
+    height: auto;
+    width: 100%;
+    background-color: beige;
+    color: var(--marrom2);
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about h2 {
+    font-size: 25px;
+    margin: 2em 0;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display img {
+    width: 18em;
+    margin-left: 10px;
+    border: 1px solid var(--marrom2);
+}
+.display .texto {
+    margin: 0 3em;
+    text-align: justify;
+}
+
+@media screen and (max-width: 715px){
+    .display {
+        flex-direction: column;
+    }
+    .display img {
+        width: 21em;
+        margin-bottom: 3em;
+        margin-left: 0;
+    }
+}

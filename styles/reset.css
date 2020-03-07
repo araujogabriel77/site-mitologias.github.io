@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+:root {
+    --lbg: #542d15;
+    --marrom1: #5a4214;
+    --marrom2: #443110;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: beige;
+    font-family: 'Roboto';
+}
+.wrapper {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}

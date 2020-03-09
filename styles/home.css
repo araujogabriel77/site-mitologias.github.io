@@ -49,3 +49,48 @@
     border: 1px solid var(--marrom2);
     transform: scale(1.1);
 }
+.building {
+    max-width: 980px;
+    margin: 0 auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.building h2 {
+    color: var(--lbg);
+    margin-top: 1.5em;
+}
+.hefesto {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2em;
+}
+.building i {
+    color: var(--lbg);
+    font-size: 30pt;
+}
+.building i:nth-child(1), .building i:nth-child(3){
+    animation: gear infinite 4s linear;
+}
+.building i:nth-child(2){
+    transform: rotate(28deg);
+    animation: gear-2 infinite 4s linear;
+}
+@keyframes gear {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes gear-2 {
+    from {
+        transform: rotate(28deg);
+    }
+    to {
+        transform: rotate(-388deg);
+    }
+}

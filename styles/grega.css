@@ -1,38 +1,31 @@
+
 .nav-gods {
     position: fixed;
+    width: 90px;
+    display: flex;
     background-color: beige;
+    z-index: 10;
 }
 .nav-gods ul {
-    width: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
+    align-items: center;
 }
 .nav-gods ul li {
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30px;
-    width: 20%;
-    margin-top: .5em;
-    border-radius: 6px;
-    font-size: 14px;
-    background-color: var(--lbg);
-    cursor: pointer;
+    margin: .2em .4em;
+    border: 1px solid var(--lbg);
     transition: .3s;
 }
-.nav-gods ul li:hover  {
-    padding-bottom: 5px;
-    width: 100%;
-    background-color: beige;
-    border: 1px solid var(--lbg);
-}
-.nav-gods ul li:hover a {
-    color: var(--lbg);
+.nav-gods ul li:hover {
+    transform: scale(1.1);
 }
 .nav-gods ul li a {
-    color: beige;
+    color: var(--lbg);
     font-size: 11pt;
 }
 .content {
@@ -44,7 +37,7 @@
     width: 100%;
     padding: 10px 0;
 }
-.content h1 {
+.content h1, .content h3 {
     display: flex;
     align-items: flex-end;
     padding-bottom: .2em;
@@ -53,12 +46,35 @@
     font-size: 22pt;
     color: var(--lbg);
 }
+.content h3 {
+    font-size: 15pt;
+    border-bottom: 2px solid var(--marrom2);
+}
 .content p {
     margin-top: 1em;
     font-size: 13pt;
     text-align: justify;
     line-height: 1.5;
 }
+.god-link-btn {
+    cursor: pointer;
+    color: beige;
+    width: 100px;
+    height: 30px;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    border: 1px solid beige;
+    border-radius: 4px;
+    align-items: center;
+    transition: all .3s;
+}
+.god-link-btn:hover {
+    padding-bottom: 2px;
+    color: var(--lbg);
+    background-color: beige;
+}
+
 .info-content {
     background-color: var(--lbg);
     width: 70%;
@@ -72,8 +88,13 @@
     background-color: beige;
     border: 2px solid var(--lbg);
 }
-.odd .god-text h3, .odd .god-text p{
+.odd .god-text h3, .odd .god-text p, .odd a{
     color: var(--lbg);
+}
+.odd a:hover {
+    padding-bottom: 2px;
+    color: beige;
+    background-color: var(--lbg);
 }
 
 .info-content img {
@@ -84,6 +105,10 @@
 .info-content .god-text {
     color: beige;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 .info-content .god-text h3 {
     font-size: 16pt;
@@ -97,9 +122,10 @@
 
 
 @media screen and (max-width:550px) {
-    /* .nav-gods {
+     .nav-gods {
         display: none;
-    } */
+    } 
+
     .info-content {
         flex-direction: column;
         justify-content: center;

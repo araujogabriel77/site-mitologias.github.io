@@ -31,7 +31,18 @@
     margin: 0 3em;
     text-align: justify;
 }
-
+.texto .ref {
+    font-size: 10pt;
+    font-style: italic;
+    color: rgba(0, 0, 0, .7);
+}
+.texto .ref a {
+    color: rgba(0, 0, 0, .7);
+    transition: all .3s;
+}
+.texto .ref a:hover {
+    color: var(--lbg);
+}
 @media screen and (max-width: 715px){
     .display {
         flex-direction: column;

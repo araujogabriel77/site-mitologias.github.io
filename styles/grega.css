@@ -56,6 +56,16 @@
     text-align: justify;
     line-height: 1.5;
 }
+.ref {
+    font-size: 10pt;
+    font-style: italic;
+    color: rgba(0, 0, 0, .7);
+    margin-top: .5em;
+}
+.ref a {
+    color: rgba(0, 0, 0, .7);
+    transition: all .3s;
+}
 .god-link-btn {
     cursor: pointer;
     color: beige;
